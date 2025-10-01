@@ -9,6 +9,7 @@ export default function LogoSlider() {
     "/logo5.png",
     "/logo6.png",
     "/logo7.png",
+    
   ];
 
   // Responsive visibleSlides
@@ -97,7 +98,7 @@ export default function LogoSlider() {
   return (
     <>
       <div className="my-5 max-w-7xl mx-auto mt-30">
-        <p className="text-3xl md:text-5xl font-serif">Calmkaj Community</p>
+        <p className="text-3xl md:text-5xl text-center lg:text-left font-serif">Calmkaj Community</p>
       </div>
 
       <div
@@ -142,7 +143,7 @@ export default function LogoSlider() {
         </div>
         <div
           onClick={handleNext}
-          className="absolute right-0 pr-4 top-1/2 -translate-y-1/2 bg-white text-amber-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-4xl sm:text-5xl cursor-pointer select-none"
+          className="absolute right-0 pr-4 top-1/2 -translate-y-1/2  bg-white text-amber-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-4xl sm:text-5xl cursor-pointer select-none"
         >
           ››
         </div>

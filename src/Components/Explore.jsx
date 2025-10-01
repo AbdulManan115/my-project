@@ -5,7 +5,7 @@ export default function Explore() {
     <>
       <div className="max-w-7xl mx-auto flex flex-col gap-6 px-4">
         {/* Heading */}
-        <h2 className="text-center w-full text-xl sm:text-2xl lg:text-[33px] font-semibold font-serif">
+        <h2 className="text-center w-full text-xl sm:text-2xl lg:text-[33px] font-semibold font-serif pt-10 sm:pt-6">
           Explore The CalmKaaj CoWorking Space
         </h2>
 

@@ -1,1 +1,63 @@
 @import "tailwindcss";
+.grid-footer-template{
+    grid-template-columns: 1.5fr 1fr 3fr 0.1fr;
+}
+
+/* Mobile responsive grid */
+@media (max-width: 640px) {
+    .grid-footer-template{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Tablet responsive grid */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-footer-template{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Additional responsive improvements */
+@media (max-width: 640px) {
+    .grid-footer-template > div:nth-child(1) {
+        order: 1;
+    }
+    .grid-footer-template > div:nth-child(2) {
+        order: 2;
+    }
+    .grid-footer-template > div:nth-child(3) {
+        order: 3;
+    }
+    .grid-footer-template > div:nth-child(4) {
+        order: 4;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-footer-template > div:nth-child(1) {
+        order: 1;
+    }
+    .grid-footer-template > div:nth-child(2) {
+        order: 2;
+    }
+    .grid-footer-template > div:nth-child(3) {
+        order: 3;
+    }
+    .grid-footer-template > div:nth-child(4) {
+        order: 4;
+    }
+}
+
+/* Services component background - only applies to Services component */
+.services-background {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/Servicebg.jpg');
+    background-attachment: fixed;
+}
