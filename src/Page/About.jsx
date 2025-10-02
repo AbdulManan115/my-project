@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
-export default function AboutUs() {
+export default function About() {
   const carddata = [
     {
       Heading: "Samina Rizwan ",
