@@ -17,12 +17,12 @@ export default function Footer() {
 
           {/* Column 2 - Navigation */}
           <div className="text-left">
-            <h3 className="text-lg sm:text-xl text-amber-600 font-semibold font-serif mb-3 md:mb-4">
+            <a href="/" className="text-lg sm:text-xl text-amber-600 font-semibold font-serif mb-3 md:mb-4 cursor-pointer">
               Home
-            </h3>
-            <ul className="space-y-1 text-black text-base sm:text-lg font-sans">
-              <li className="hover:text-amber-600 cursor-pointer transition-colors">About Us</li>
-              <li className="hover:text-amber-600 cursor-pointer transition-colors">Our Services</li>
+            </a>
+            <ul className="space-y-1 text-black text-base sm:text-lg font-sans flex-col flex">
+              <a href="/about" className="hover:text-amber-600 cursor-pointer transition-colors">About Us</a>
+              <a href="/services" className="hover:text-amber-600 cursor-pointer transition-colors">Our Services</a>
               <li className="hover:text-amber-600 cursor-pointer transition-colors">CalmKaaj Blue Area</li>
               <li className="hover:text-amber-600 cursor-pointer transition-colors">CalmKaaj I-10</li>
               <li className="hover:text-amber-600 cursor-pointer transition-colors">Blog</li>

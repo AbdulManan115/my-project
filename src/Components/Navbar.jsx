@@ -37,9 +37,9 @@ export default function Navbar() {
           <a href="/about" className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             About Us
           </a>
-          <li className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
+          <a href="/services" className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             Our Services
-          </li>
+          </a>
 
           {/* Dropdown (Desktop) */}
           <li
@@ -99,16 +99,16 @@ export default function Navbar() {
         <div className="md:hidden bg-amber-600 border-t w-full">
           <ul className="flex flex-col gap-2 p-4 w-full">
             {/* Home → always dark green */}
-            <li className="font-semibold text-base text-white bg-[#27371B] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/" className="font-semibold text-base text-white bg-[#27371B] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Home
-            </li>
+            </a>
 
-            <li className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/about" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               About Us
-            </li>
-            <li className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            </a>
+            <a href="/services" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Our Services
-            </li>
+            </a>
 
             {/* Mobile Dropdown */}
             <li

@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
-export default function () {
+export default function AboutUs() {
   const carddata = [
     {
       Heading: "Samina Rizwan ",
@@ -24,63 +24,70 @@ export default function () {
       role: "founder",
     },
     {
-      Heading: " Raja Manan Zafar",
+      Heading: "Raja Manan Zafar",
       img: "team4.jpg",
       desciption: "Managing Partner",
       role: "manager",
     },
     {
-      Heading: " Chanelle Adam Khan",
+      Heading: "Chanelle Adam Khan",
       img: "teamm5.jpg",
       desciption: "Partner",
       role: "manager",
     },
     {
-      Heading: "Zeb Ayaz ",
+      Heading: "Zeb Ayaz",
       img: "team6.avif",
       desciption: "Chief Executive Officer",
       role: "team",
     },
     {
-      Heading: " Shayan Qureshi",
+      Heading: "Shayan Qureshi",
       img: "team7.avif",
       desciption: "Chief Growth Officer",
       role: "team",
     },
     {
-      Heading: "Usman Mushtaq ",
+      Heading: "Usman Mushtaq",
       img: "team8.avif",
       desciption: "Manager Admin & Finance",
       role: "team",
     },
     {
-      Heading: "Usman Mushtaq ",
+      Heading: "Usman Mushtaq",
       img: "team9.avif",
       desciption: "Manager Admin & Finance",
       role: "team",
     },
     {
-      Heading: "Usman Mushtaq ",
+      Heading: "Usman Mushtaq",
       img: "team10.png",
       desciption: "Manager Admin & Finance",
       role: "team",
     },
   ];
+
   const founder = carddata.filter((item) => item.role === "founder");
   const manager = carddata.filter((item) => item.role === "manager");
   const team = carddata.filter((item) => item.role === "team");
 
   return (
-    <div>
+    <div className="relative">
       <Navbar />
-      {/* image section */}
-      <div className="relative">
-        <div className="h-full w-full absolute top-0 right-0 bottom-0 left-0 bg-black/40"></div>
-        <img src="about1.jpg" className="h-70 w-screen object-cover " />
-      </div>
-      <div className="max-w-7xl mx-auto absolute top-[30%] left-0 right-0 bottom-0 px-4">
-        <p className="text-4xl md:text-6xl font-serif text-white">About Us</p>
-        <div className="max-w-[250px] bg-[#C66A28] p-[2px] justify-start mt-3"></div>
+
+      {/* Hero / Image section */}
+      <div className="relative w-full">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 z-0"></div>
+
+        {/* Background Image */}
+        <img src="about1.jpg" className="h-70 w-full object-cover" />
+
+        {/* Text over image */}
+        <div className="absolute top-[30%] left-0 right-0 px-4 z-10 text-center md:text-left max-w-7xl mx-auto">
+          <p className="text-4xl md:text-6xl font-serif text-white">About Us</p>
+          <div className="max-w-[250px] bg-[#C66A28] h-[3px] mt-3 mx-auto md:mx-0"></div>
+        </div>
       </div>
 
       {/* Text section */}
@@ -136,15 +143,15 @@ export default function () {
         </div>
       </div>
 
-      {/* team section*/}
-      <div className="max-w-7xl mx-auto mt-15 px-4 md:px-0">
+      {/* Team Section */}
+      <div className="max-w-7xl mx-auto mt-16 px-4 md:px-0">
         <p className="text-3xl md:text-4xl font-serif">Meet the Team</p>
       </div>
 
       {/* Founders */}
-      <div className="max-w-7xl mx-auto px-4 md:px-0">
-        <p className="text-xl md:text-2xl font-serif pt-5">Founders</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-15">
+      <div className="max-w-7xl mx-auto px-4 md:px-0 mt-8">
+        <p className="text-xl md:text-2xl font-serif">Founders</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
           {founder.map((items, index) => (
             <Card
               key={index}
@@ -156,10 +163,10 @@ export default function () {
         </div>
       </div>
 
-      {/* Manager */}
+      {/* Managers */}
       <div className="max-w-7xl mx-auto px-4 md:px-0">
         <p className="text-xl md:text-2xl font-serif">Managing Partner</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-15">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
           {manager.map((items, index) => (
             <Card
               key={index}
@@ -174,7 +181,7 @@ export default function () {
       {/* Team */}
       <div className="max-w-7xl mx-auto px-4 md:px-0">
         <p className="text-xl md:text-2xl font-serif">Team</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-30">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
           {team.map((items, index) => (
             <Card
               key={index}

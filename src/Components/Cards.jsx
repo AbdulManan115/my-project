@@ -44,13 +44,13 @@ export default function Cards() {
         {carddata.map((items, index) => (
           <div
             key={index}
-            className="bg-white shadow-2xl rounded-br-3xl overflow-hidden"
+            className="bg-white shadow-2xl  overflow-hidden"
           >
             <div>
               <img
                 src={items.img}
                 alt={items.Heading}
-                className="w-full h-55 object-cover"
+                className="w-full h-55 object-cover rounded-br-3xl"
               />
             </div>
             <div>
