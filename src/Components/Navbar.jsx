@@ -31,12 +31,12 @@ export default function Navbar() {
 
         {/* Center → Menu */}
         <ul className="hidden md:flex gap-6 lg:gap-10 items-center flex-grow justify-center">
-          <li className="font-semibold text-base lg:text-lg text-amber-600 cursor-pointer">
+          <a href="/" className="font-semibold text-base lg:text-lg text-amber-600 cursor-pointer">
             Home
-          </li>
-          <li className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
+          </a>
+          <a href="/about" className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             About Us
-          </li>
+          </a>
           <li className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             Our Services
           </li>
