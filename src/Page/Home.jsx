@@ -9,7 +9,7 @@ import Testimonials from '../Components/Testimonial'
 import Imageslide from '../Components/Imageslide'
 import Booking from '../Components/Booking'
 import Footer from '../Components/Footer'
-import Services from '../Components/Services'
+import Ourservice from '../Components/Ourservice'
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
       <Cards/>
        <Explore/> 
        <Facilites/>
-        <Services/> 
+       <Ourservice/>
        <LogoSlider/>
        <Testimonials/>
        <Imageslide/>

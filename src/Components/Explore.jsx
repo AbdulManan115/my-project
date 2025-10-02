@@ -37,9 +37,9 @@ export default function Explore() {
             </p>
 
             {/* Button */}
-            <button className="mt-4 self-start bg-[#27371B] text-white px-5 sm:px-6 py-2 rounded-lg shadow-md text-sm sm:text-base hover:bg-amber-600 transition-all duration-300 cursor-pointer">
+            <a href="/about" className="mt-4 self-start bg-[#27371B] text-white px-5 sm:px-6 py-2 rounded-lg shadow-md text-sm sm:text-base hover:bg-amber-600 transition-all duration-300 cursor-pointer">
               About CalmKaaj →
-            </button>
+            </a>
           </div>
 
           {/* Right Images Section */}

@@ -16,9 +16,9 @@ export default function Services() {
         </p>
 
         {/* Button */}
-        <button className="mt-2 bg-[#27371B] hover:bg-[#C66A28] text-white hover:text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-lg transition">
+        <a href="/services" className="mt-2 bg-[#27371B] hover:bg-[#C66A28] text-white hover:text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-lg transition">
           View Our Services →
-        </button>
+        </a>
       </div>
     </div>
   );
