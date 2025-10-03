@@ -42,10 +42,7 @@ export default function Cards() {
       {/* ✅ Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl  lg:max-w-6xl mx-auto gap-6">
         {carddata.map((items, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-2xl  overflow-hidden"
-          >
+          <div key={index} className="bg-white shadow-2xl  overflow-hidden">
             <div>
               <img
                 src={items.img}
@@ -63,9 +60,12 @@ export default function Cards() {
                 {items.Description}
               </p>
             </div>
-            <button className="text-md px-5 py-2 font-sans font-semibold text-[#C66B2A] hover:text-[#27371B] cursor-pointer">
-              Book Now
-            </button>
+            <a href="/contact">
+              <button className="text-md px-5 py-2 font-sans font-semibold text-[#C66B2A] hover:text-[#27371B] cursor-pointer">
+                Book Now
+                <div className="max-w-[80px] sm:max-w-[100px] bg-[#C66A28] h-[2px] mt-1 mx-auto sm:mx-0"></div>
+              </button>
+            </a>
           </div>
         ))}
       </div>

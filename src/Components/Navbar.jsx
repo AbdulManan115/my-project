@@ -68,9 +68,9 @@ export default function Navbar() {
           <li className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             Blog
           </li>
-          <li className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
+          <a href="/contact" className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             Contact Us
-          </li>
+          </a>
         </ul>
 
         {/* Right → Desktop Search Bar */}
@@ -131,9 +131,9 @@ export default function Navbar() {
             <li className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Blog
             </li>
-            <li className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/contact" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Contact Us
-            </li>
+            </a>
           </ul>
         </div>
       )}

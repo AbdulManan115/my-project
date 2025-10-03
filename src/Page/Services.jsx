@@ -96,10 +96,12 @@ export default function Services() {
                   {items.Description}
                 </p>
               </div>
+              <a href="/contact">
               <button className="w-full sm:w-auto text-sm sm:text-md px-4 sm:px-5 py-2 mt-3 sm:mt-2 font-sans font-semibold text-[#C66B2A] hover:text-[#27371B] cursor-pointer text-center sm:text-left">
                 Book Now
                 <div className="max-w-[80px] sm:max-w-[100px] bg-[#C66A28] h-[2px] mt-1 mx-auto sm:mx-0"></div>
               </button>
+              </a>
             </div>
           ))}
         </div>

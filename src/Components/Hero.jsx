@@ -34,9 +34,13 @@ export default function Hero() {
         </p>
 
         {/* Button */}
-        <button className="mt-6 lg:mt-9 py-2 sm:py-3 px-6 lg:px-10 bg-[#C66A28] text-white rounded-lg font-semibold cursor-pointer text-sm sm:text-base lg:text-[20px]">
+        <a href="/contact">
+
+        
+        <button  className="mt-6 lg:mt-9 py-2 sm:py-3 px-6 lg:px-10 bg-[#C66A28] text-white rounded-lg font-semibold cursor-pointer text-sm sm:text-base lg:text-[20px]">
           Contact Us →
         </button>
+        </a>
       </div>
     </div>
   );
