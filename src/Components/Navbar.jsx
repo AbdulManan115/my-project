@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="w-full shadow-md bg-white">
       {/* 🔍 Mobile Top Search Bar */}
-      <div className="border-b p-3 flex justify-center bg-white md:hidden">
+      <div className="border-b p-3 flex justify-center bg-white lg:hidden">
         <div className="flex border-2 rounded-md w-full max-w-md overflow-hidden">
           <input
             type="text"
@@ -30,7 +30,7 @@ export default function Navbar() {
         </div>
 
         {/* Center → Menu */}
-        <ul className="hidden md:flex gap-6 lg:gap-10 items-center flex-grow justify-center">
+        <ul className="hidden lg:flex gap-6 lg:gap-10 items-center flex-grow justify-center">
           <a href="/" className="font-semibold text-base lg:text-lg text-amber-600 cursor-pointer">
             Home
           </a>
@@ -74,7 +74,7 @@ export default function Navbar() {
         </ul>
 
         {/* Right → Desktop Search Bar */}
-        <div className="hidden md:flex border-2 rounded-md overflow-hidden">
+        <div className="hidden lg:flex border-2 rounded-md overflow-hidden">
           <input
             type="text"
             placeholder="Type Here"
@@ -87,7 +87,7 @@ export default function Navbar() {
 
         {/* 📱 Hamburger (Mobile) */}
         <button
-          className="md:hidden text-2xl text-[#27371B]"
+          className="lg:hidden text-2xl text-[#27371B]"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -96,7 +96,7 @@ export default function Navbar() {
 
       {/* 📱 Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-amber-600 border-t w-full">
+        <div className="lg:hidden bg-amber-600 border-t w-full">
           <ul className="flex flex-col gap-2 p-4 w-full">
             {/* Home → always dark green */}
             <a href="/" className="font-semibold text-base text-white bg-[#27371B] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
