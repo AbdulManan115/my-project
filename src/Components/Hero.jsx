@@ -11,7 +11,7 @@ export default function Hero() {
       />
 
       {/* 🔹 Dark Overlay */}
-      <div className="absolute inset-0 bg-black/45"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       {/* 🔹 Text Section */}
       <div className="absolute top-12 sm:top-20 lg:top-1/2 left-5 sm:left-10 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-10 text-left lg:text-center px-2 sm:px-0">
