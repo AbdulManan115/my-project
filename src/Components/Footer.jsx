@@ -25,7 +25,7 @@ export default function Footer() {
               <a href="/services" className="hover:text-amber-600 cursor-pointer transition-colors">Our Services</a>
               <li className="hover:text-amber-600 cursor-pointer transition-colors">CalmKaaj Blue Area</li>
               <li className="hover:text-amber-600 cursor-pointer transition-colors">CalmKaaj I-10</li>
-              <li className="hover:text-amber-600 cursor-pointer transition-colors">Blog</li>
+              <a href="/blog" className="hover:text-amber-600 cursor-pointer transition-colors">Blog</a>
               <a href="/contact" className="hover:text-amber-600 cursor-pointer transition-colors">Contact</a>
             </ul>
           </div>

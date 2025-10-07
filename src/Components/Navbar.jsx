@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Search, SearchIcon, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +11,7 @@ export default function Navbar() {
       {/* 🔍 Mobile Top Search Bar */}
       <div className="border-b p-3 flex justify-center bg-white lg:hidden">
         <div className="flex border-2 rounded-md w-full max-w-md overflow-hidden">
+          <SearchIcon size={20} className="border text-black" />
           <input
             type="text"
             placeholder="Type here..."
@@ -65,9 +66,9 @@ export default function Navbar() {
             </ul>
           </li>
 
-          <li className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
+          <a href="/blog" className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             Blog
-          </li>
+          </a>
           <a href="/contact" className="font-medium text-base lg:text-lg text-gray-800 hover:text-amber-600 cursor-pointer">
             Contact Us
           </a>
@@ -128,9 +129,9 @@ export default function Navbar() {
               )}
             </li>
 
-            <li className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/blog" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Blog
-            </li>
+            </a>
             <a href="/contact" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Contact Us
             </a>

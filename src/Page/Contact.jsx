@@ -160,6 +160,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+    
 
       <Footer />
     </div>
