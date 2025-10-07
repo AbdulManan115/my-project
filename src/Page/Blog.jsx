@@ -11,7 +11,7 @@ export default function Blog() {
                 <div className="absolute inset-0 bg-black/40 z-0"></div>
 
                 {/* Background Image */}
-                <img src="about1.jpg" className="w-full object-cover h-60 md:h-80 lg:h-[420px]" />
+                <img src="about1.jpg" className="w-full object-cover h-60 md:h-80 lg:h-[300px]" />
 
                 {/* Text over image */}
                 <div className="absolute top-[30%] left-0 right-0 px-4 z-10 text-center md:text-left max-w-7xl mx-auto">

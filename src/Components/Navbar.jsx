@@ -11,7 +11,7 @@ export default function Navbar() {
       {/* 🔍 Mobile Top Search Bar */}
       <div className="border-b p-3 flex justify-center bg-white lg:hidden">
         <div className="flex border-2 rounded-md w-full max-w-md overflow-hidden">
-          <SearchIcon size={20} className="border text-black" />
+          
           <input
             type="text"
             placeholder="Type here..."
