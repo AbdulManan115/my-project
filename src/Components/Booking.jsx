@@ -35,15 +35,11 @@ export default function BookingForm() {
           </div>
           {openLocation && (
             <ul className="absolute left-0 top-full mt-2 w-full bg-white text-black rounded-lg z-10 text-sm sm:text-base">
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
-                Choose Location
+              
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
+                Barakhu Islamabad
               </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
-                CalmKaj : Ali Plaza
-              </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
-                CalmKaj : Blue Area, Islamabad
-              </li>
+              
             </ul>
           )}
         </div>
@@ -59,23 +55,23 @@ export default function BookingForm() {
           </div>
           {openWorkspace && (
             <ul className="absolute left-0 top-full mt-2 w-full bg-white text-black rounded-lg z-10 text-sm sm:text-base">
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
                 Private Offices
               </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
                 Flexible Desk
               </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
                 Dedicated Desk
               </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
                 Events
               </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
                 Virtual Offices
               </li>
-              <li className="px-4 py-2 hover:bg-amber-500 bg-black text-white cursor-pointer">
-                Conference Room
+              <li className="px-4 py-2 hover:bg-blue-800 bg-black text-white cursor-pointer">
+              Team Workspace
               </li>
             </ul>
           )}

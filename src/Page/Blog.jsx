@@ -22,7 +22,7 @@ export default function Blog() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 max-w-7xl mx-auto gap-5 md:gap-6 mb-8 px-4' >
                 <div className=' p-5 rounded-lg shadow-2xl'>
                     <div>
-                        <p className='text-[20px] font-serif text-[#54595F]'>Coworking Spaces in Islamabad: Where to Work Smarter in 2025</p>
+                        <p className='text-[20px] font-serif text-[#54595F]'>Dafter Spaces in Islamabad: Where to Work Smarter in 2025</p>
                         <p className='text-[16px] font-sans py-5 text-gray-500'>Islamabad, once known for its calm environment, government offices, and a quiet corporate culture, is now transforming into a thriving hub for freelancers, startups, and</p>
                         <a href='' className='text-[14px] font-sans font-semibold text-[#393a39] cursor-pointer'>Read More »</a>
                         <div className='flex gap-3  border-t-1 p-4 font-serif text-[#b1afb0]'>

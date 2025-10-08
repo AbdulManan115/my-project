@@ -15,7 +15,7 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Type here..."
-            className="w-full py-2 px-3 text-sm focus:outline-none"
+            className="w-full py-2 px-3 text-sm focus:outline-none"npm
           />
           <button className="bg-[#27371B] text-white px-5 py-2 text-sm font-medium">
             Search
@@ -48,7 +48,7 @@ export default function Navbar() {
             onMouseEnter={() => setShowLocations(true)}
             onMouseLeave={() => setShowLocations(false)}
           >
-            Locations ▾
+            Location ▾
             <ul
               className={`absolute top-0 left-0 mt-2 rounded-md shadow-md ${
                 showLocations ? "block" : "hidden"
@@ -56,12 +56,10 @@ export default function Navbar() {
             >
               <div className=" overflow-hidden mt-7">
 
-              <li className="bg-amber-600 text-white hover:bg-[#27371B] cursor-pointer px-4 py-2 whitespace-nowrap">
-                CalmKaj Blue Area
-              </li>
-              <li className="bg-amber-600 text-white hover:bg-[#27371B] cursor-pointer px-4 py-2 whitespace-nowrap">
-                CalmKaj I-10
-              </li>
+              <a href="/location" className="bg-amber-600 text-white hover:bg-[#27371B] cursor-pointer px-4 py-4 whitespace-nowrap">
+              Barakahu Islamabad
+              </a>
+              
               </div>
             </ul>
           </li>
@@ -97,42 +95,40 @@ export default function Navbar() {
 
       {/* 📱 Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-amber-600 border-t w-full">
+        <div className="lg:hidden bg-[#B16227] border-t w-full">
           <ul className="flex flex-col gap-2 p-4 w-full">
             {/* Home → always dark green */}
             <a href="/" className="font-semibold text-base text-white bg-[#27371B] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Home
             </a>
 
-            <a href="/about" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/about" className="font-medium text-base text-white bg-[#B16227] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               About Us
             </a>
-            <a href="/services" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/services" className="font-medium text-base text-white bg-[#B16227] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Our Services
             </a>
 
             {/* Mobile Dropdown */}
             <li
-              className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md"
+              className="font-medium text-base text-white bg-[#B16227] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md"
               onClick={() => setShowMobileLocations(!showMobileLocations)}
             >
               Locations ▾
               {showMobileLocations && (
                 <ul className="mt-2 flex flex-col">
-                  <li className="text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
-                    CalmKaj Blue Area
-                  </li>
-                  <li className="text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
-                    CalmKaj I-10
-                  </li>
+                  <a href="/location" className="text-white bg-[#B16227] hover:bg-[#27371B] cursor-pointer px-3 py-4 rounded-md">
+                  Barakahu Islamabad
+                  </a>
+                  
                 </ul>
               )}
             </li>
 
-            <a href="/blog" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/blog" className="font-medium text-base text-white bg-[#B16227] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Blog
             </a>
-            <a href="/contact" className="font-medium text-base text-white bg-amber-600 hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
+            <a href="/contact" className="font-medium text-base text-white bg-[#B16227] hover:bg-[#27371B] cursor-pointer px-3 py-2 rounded-md">
               Contact Us
             </a>
           </ul>

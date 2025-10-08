@@ -31,10 +31,9 @@ export default function Cards() {
     },
     {
       img: "Card.jpeg",
-      Heading: "Conference Room",
+      Heading: "Team Workspace",
       Description:
-        "We are open for visitor bookings, offering a convenient and welcoming experience.",
-    },
+        "Shared space for small teams to collaborate and work efficiently."}
   ];
 
   return (

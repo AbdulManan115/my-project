@@ -6,6 +6,7 @@ import About from "./Page/About";
 import Services from "./Page/Services";
 import Contact from "./Page/Contact";
 import Blog from "./Page/Blog";
+import Location from "./Page/Location";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/location" element={<Location/>}/>
       </Routes>
     </Router>
   );

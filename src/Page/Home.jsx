@@ -4,7 +4,7 @@ import Hero from '../Components/Hero'
 import Cards from '../Components/Cards'
 import Explore from '../Components/Explore'
 import Facilites from '../Components/Facilites'
-import LogoSlider from '../Components/Logos'
+
 import Testimonials from '../Components/Testimonial'
 import Imageslide from '../Components/Imageslide'
 import Booking from '../Components/Booking'
@@ -20,8 +20,8 @@ export default function App() {
        <Explore/> 
        <Facilites/>
        <Ourservice/>
-       <LogoSlider/>
-       <Testimonials/>
+       
+       {/* <Testimonials/> */}
        <Imageslide/>
        <Booking/>
        <Footer/>

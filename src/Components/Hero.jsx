@@ -18,14 +18,14 @@ export default function Hero() {
         {/* Heading */}
         <h1 className="text-white font-serif text-2xl sm:text-4xl lg:text-[48px] font-bold leading-snug mx-0 lg:mx-auto whitespace-normal lg:whitespace-nowrap break-words">
           CoWorking Space In Islamabad
-        </h1>
+        </h1>f
 
         {/* Orange Line */}
         <div className="bg-[#C66A28] h-[3px] w-24 sm:w-36 lg:w-56 my-4 lg:my-6 mx-0 lg:mx-auto"></div>
 
         {/* Paragraph */}
         <p className="text-white font-serif text-sm sm:text-lg lg:text-[20px] leading-relaxed max-w-[95%] sm:max-w-[85%] lg:max-w-[65%] mx-0 lg:mx-auto opacity-90">
-          CalmKaaj is a dynamic hub offering premium coworking spaces and fully
+          Dafterspace is a dynamic hub offering premium coworking spaces and fully
           equipped offices in Islamabad — fostering a community of innovators
           and empowering them to thrive. Designed for freelancers, startups, and
           remote teams, our vibrant environment encourages collaboration,

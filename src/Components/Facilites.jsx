@@ -9,24 +9,14 @@ export default function Facilites() {
       Description:
         "Custom offices tailored to your needs, offering privacy, comfort, and a professional workspace.",
     },
-    {
-      Icon: <Wifi className="h-8 w-auto" />,
-      Heading: "Power Backup",
-      Description:
-        "Reliable power backup ensures uninterrupted work, keeping you productive during outages.",
-    },
+      
     {
       Icon: <Coffee className="h-8 w-auto" />,
       Heading: "Tea on the house",
       Description:
         "Stay refreshed with complimentary tea available to all members.",
     },
-    {
-      Icon: <Wifi className="h-8 w-auto" />,
-      Heading: "Meeting & Conference Rooms",
-      Description:
-        "Fully equipped spaces for meetings and conferences, designed for productivity and professionalism.",
-    },
+    
     {
       Icon: <Printer className="h-8 w-auto" />,
       Heading: "Print & Scan",
@@ -57,24 +47,14 @@ export default function Facilites() {
       Description:
         "A quiet, private space for reflection and worship, helping you stay balanced during your workday.",
     },
-    {
-      Icon: <Wifi className="h-8 w-auto" />,
-      Heading: "Lockers",
-      Description:
-        "Secure lockers for your personal items, keeping your workspace organized and worry-free..",
-    },
+    
     {
       Icon: <Wifi className="h-8 w-auto" />,
       Heading: "Flexible Payment Options",
       Description:
         "Customizable payment plans to suit your business needs, offering easy cost management.",
     },
-    {
-      Icon: <Wifi className="h-8 w-auto" />,
-      Heading: "Access to an Awesome Community",
-      Description:
-        "Join a vibrant community of professionals to collaborate and grow.",
-    },
+    
   ];
 
   return (

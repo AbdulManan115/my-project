@@ -23,8 +23,8 @@ export default function Footer() {
             <ul className="space-y-1 text-black text-base sm:text-lg font-sans flex-col flex">
               <a href="/about" className="hover:text-amber-600 cursor-pointer transition-colors">About Us</a>
               <a href="/services" className="hover:text-amber-600 cursor-pointer transition-colors">Our Services</a>
-              <li className="hover:text-amber-600 cursor-pointer transition-colors">CalmKaaj Blue Area</li>
-              <li className="hover:text-amber-600 cursor-pointer transition-colors">CalmKaaj I-10</li>
+              <a href="/location" className="hover:text-amber-600 cursor-pointer transition-colors">Location</a>
+              
               <a href="/blog" className="hover:text-amber-600 cursor-pointer transition-colors">Blog</a>
               <a href="/contact" className="hover:text-amber-600 cursor-pointer transition-colors">Contact</a>
             </ul>
@@ -40,16 +40,16 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-black hover:text-amber-600 flex-shrink-0" />
-                <span>+92 300 1234567</span>
+                <span>+92 313 6224778 | +92 323 1557988</span>
               </li>
-              <li className="flex items-center space-x-3">
+              <a href="/location" className="flex cursor-pointer items-center space-x-3">
                 <MapPin size={18} className="text-black hover:text-amber-600 flex-shrink-0" />
-                <span>Blue Area, Islamabad</span>
-              </li>
-              <li className="flex items-start space-x-3 text-xs sm:text-sm md:text-base">
+                <span>Barakahu Islamabad</span>
+              </a>
+              <a href="/location" className="flex cursor-pointer items-start space-x-3 text-xs sm:text-sm md:text-base">
                 <MapPin size={18} className="text-black hover:text-amber-600 flex-shrink-0 mt-1" />
-                <span>CalmKaaj Crossroads: Farid Business Park I-10/3, Islamabad</span>
-              </li>
+                <span>Kalsoom Plaza, 1st Floor, Murree Road, Barakhu, Islamabad</span>
+              </a>
             </ul>
           </div>
 

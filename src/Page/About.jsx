@@ -6,70 +6,42 @@ import Footer from "../Components/Footer";
 export default function About() {
   const carddata = [
     {
-      Heading: "Samina Rizwan ",
-      img: "team1.avif",
-      desciption: "Co-Founder",
-      role: "founder",
+      Heading: "Usama Bhatti ",
+      img: "member1.webp",
+      desciption: "CEO",
+      role: "Our Team",
     },
     {
-      Heading: "Sheraz Karim",
-      img: "team2.avif",
-      desciption: "Co-Founder",
-      role: "founder",
+      Heading: "Aman Zaheer ",
+      img: "member3.webp",
+      desciption: "Manager",
+      role: "Our Team",
     },
     {
-      Heading: "Taimur Nawaz",
-      img: "team3.avif",
-      desciption: "Co-Founder",
-      role: "founder",
+      Heading: "Hamza Ali",
+      img: "member2.webp",
+      desciption: "Senior Executive)",
+      role: "Our Team",
     },
     {
-      Heading: "Raja Manan Zafar",
-      img: "team4.jpg",
-      desciption: "Managing Partner",
+      Heading: "Subhan Ali",
+      img: "member4.png",
+      desciption: "Designer",
       role: "manager",
     },
     {
-      Heading: "Chanelle Adam Khan",
-      img: "teamm5.jpg",
-      desciption: "Partner",
+      Heading: "AbdulManan",
+      img: "",
+      desciption: "Developer",
       role: "manager",
     },
-    {
-      Heading: "Zeb Ayaz",
-      img: "team6.avif",
-      desciption: "Chief Executive Officer",
-      role: "team",
-    },
-    {
-      Heading: "Shayan Qureshi",
-      img: "team7.avif",
-      desciption: "Chief Growth Officer",
-      role: "team",
-    },
-    {
-      Heading: "Usman Mushtaq",
-      img: "team8.avif",
-      desciption: "Manager Admin & Finance",
-      role: "team",
-    },
-    {
-      Heading: "Usman Mushtaq",
-      img: "team9.avif",
-      desciption: "Manager Admin & Finance",
-      role: "team",
-    },
-    {
-      Heading: "Usman Mushtaq",
-      img: "team10.png",
-      desciption: "Manager Admin & Finance",
-      role: "team",
-    },
+    
+    
   ];
 
-  const founder = carddata.filter((item) => item.role === "founder");
+  const founder = carddata.filter((item) => item.role === "Our Team");
   const manager = carddata.filter((item) => item.role === "manager");
-  const team = carddata.filter((item) => item.role === "team");
+  
 
   return (
     <div className="relative">
@@ -93,7 +65,7 @@ export default function About() {
       {/* Text section */}
       <div className="py-10 px-4 md:px-0">
         <p className="max-w-7xl mx-auto font-serif text-[16px] md:text-[18px] my-5 leading-relaxed">
-          <span className="text-[#CC3366]">CalmKaaj</span> aims to unite loosely
+          <span className="text-[#CC3366]">DafterSpace</span> aims to unite loosely
           connected individuals into a thriving community of members, fostering
           their individual success while simultaneously enriching the collective
           ecosystem. Our coworking facilities are designed to provide
@@ -113,7 +85,7 @@ export default function About() {
           enriching the day-to-day office routine. That’s our specialty!
         </p>
         <p className="max-w-7xl mx-auto font-serif text-[16px] md:text-[18px] my-5 leading-relaxed">
-          CalmKaaj carries a quintessentially Pakistani identity. We draw
+          Dafterspace carries a quintessentially Pakistani identity. We draw
           inspiration from our leaders, thinkers, artistes and philanthropists.
           Our facilities and services are designed for our community’s local
           needs and we offer warm, friendly spaces for thought leadership,
@@ -145,18 +117,20 @@ export default function About() {
 
       {/* Team Section */}
       <div className="max-w-7xl mx-auto mt-16 px-4 md:px-0">
-        <p className="text-3xl md:text-4xl font-serif">Meet the Team</p>
+        <p className="text-3xl md:text-4xl font-serif">Meet Our Professionals</p>
       </div>
 
       {/* Founders */}
       <div className="max-w-7xl mx-auto px-4 md:px-0 mt-8">
-        <p className="text-xl md:text-2xl font-serif">Founders</p>
+        <p className="text-xl md:text-2xl font-serif">Our Mentors</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
           {founder.map((items, index) => (
             <Card
               key={index}
               Heading={items.Heading}
-              img={items.img}
+              img={items.img 
+
+              } 
               desciption={items.desciption}
             />
           ))}
@@ -179,19 +153,7 @@ export default function About() {
       </div>
 
       {/* Team */}
-      <div className="max-w-7xl mx-auto px-4 md:px-0">
-        <p className="text-xl md:text-2xl font-serif">Team</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
-          {team.map((items, index) => (
-            <Card
-              key={index}
-              Heading={items.Heading}
-              img={items.img}
-              desciption={items.desciption}
-            />
-          ))}
-        </div>
-      </div>
+      
 
       <Footer />
     </div>
@@ -200,7 +162,7 @@ export default function About() {
 
 function Card({ Heading, img, desciption }) {
   return (
-    <div className="border-4 border-[#df8240] relative my-5">
+    <div className="border-4 border-[#df8240]  bg-gradient-to-b to-[#033D25] from-[#3E8273] relative my-5">
       <img src={img} className="w-full" />
       <div className="border-4 border-[#df8240] p-5 absolute -bottom-12 right-1/2 translate-x-1/2 bg-[#27371B] w-[90%] text-white text-[16px] md:text-[20px] font-serif">
         {Heading}

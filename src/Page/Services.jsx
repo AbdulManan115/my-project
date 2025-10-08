@@ -33,9 +33,9 @@ export default function Services() {
     },
     {
       img: "Card.jpeg",
-      Heading: "Conference Room",
+      Heading: "Team Workspace",
       Description:
-        "We are open for visitor bookings, offering a convenient and welcoming experience.",
+        "Shared space for small teams to collaborate and work efficiently.",
     },
   ];
 
@@ -58,7 +58,7 @@ export default function Services() {
             Our Services
           </p>
           <p className="text-white pt-3 sm:pt-5 pb-2 text-sm sm:text-[16px] font-sans leading-relaxed sm:leading-7">
-            At CalmKaaj, we offer a diverse range of professional workspace
+            At Dafterspace, we offer a diverse range of professional workspace
             services in Islamabad, including private offices, dedicated desks,
             virtual offices, flexible co-working spaces, and conference rooms.
             Whether you're a freelancer, startup, or growing business, our fully
