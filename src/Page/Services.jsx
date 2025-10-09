@@ -29,7 +29,7 @@ export default function Services() {
     {
       img: "Card5.jpg",
       Heading: "Virtual Office",
-      Description: "Use CK address for your business. Mail handling service..",
+      Description: "Use CK address for your business. Mail handling service.",
     },
     {
       img: "Card.jpeg",
@@ -44,7 +44,7 @@ export default function Services() {
       <Navbar />
       <div className="relative w-full">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
+        <div className="absolute inset-0 bg-[#1E3A8A]/50 z-0"></div>
 
         {/* Background Image */}
         <img
@@ -53,7 +53,7 @@ export default function Services() {
         />
 
         {/* Text over image */}
-        <div className="absolute top-[8%] sm:top-[25%] md:top-[30%] left-0 right-0 px-4 z-10  md:text-left max-w-7xl mx-auto">
+        <div className="absolute top-[8%] sm:top-[25%] md:top-[30%] left-0 right-0 px-4 z-10 md:text-left max-w-7xl mx-auto">
           <p className="text-3xl sm:text-4xl md:text-6xl font-serif text-white">
             Our Services
           </p>
@@ -67,7 +67,7 @@ export default function Services() {
             and modern amenities, CalmKaaj is your go-to destination for
             reliable coworking and office solutions in Islamabad.
           </p>
-          <div className="max-w-[200px] sm:max-w-[250px] bg-[#C66A28] h-[3px] mt-3 mx-auto md:mx-0"></div>
+          <div className="max-w-[200px] sm:max-w-[250px] bg-[#FDDC1F] h-[3px] mt-3 mx-auto md:mx-0"></div>
         </div>
       </div>
 
@@ -77,7 +77,7 @@ export default function Services() {
           {carddata.map((items, index) => (
             <div
               key={index}
-              className="bg-white shadow-2xl overflow-hidden rounded-lg"
+              className="bg-white shadow-xl overflow-hidden rounded-lg border border-[#1E3A8A]/10"
             >
               <div>
                 <img
@@ -86,22 +86,25 @@ export default function Services() {
                   className="w-full h-44 sm:h-55 object-cover"
                 />
               </div>
+
               <div>
-                <p className="text-lg sm:text-xl px-4 sm:px-5 py-3 sm:py-4 font-serif text-[#C66B2A]">
+                <p className="text-lg sm:text-xl px-4 sm:px-5 py-3 sm:py-4 font-serif text-[#1E3A8A]">
                   {items.Heading}
                 </p>
               </div>
+
               <div>
-                <p className="text-sm sm:text-base px-4 sm:px-5 font-serif text-gray-700 line-clamp-3 sm:line-clamp-2 leading-relaxed">
+                <p className="text-sm sm:text-base px-4 sm:px-5 font-serif text-gray-700 leading-relaxed">
                   {items.Description}
                 </p>
               </div>
+
               <a href="/contact">
-              <button className="w-full sm:w-auto text-sm sm:text-md px-4 sm:px-5 py-2 mt-3 sm:mt-2 font-sans font-semibold text-[#C66B2A] hover:text-[#27371B] cursor-pointer text-center sm:text-left">
+              <button className="text-md px-5 py-2 font-sans font-semibold text-[#007BFF] hover:text-[#005FCC] cursor-pointer transition-all duration-200">
                 Book Now
-                <div className="max-w-[80px] sm:max-w-[100px] bg-[#C66A28] h-[2px] mt-1 mx-auto sm:mx-0"></div>
+                <div className="max-w-[80px] sm:max-w-[100px] bg-[#FDDC1F] h-[2px] mt-1 mx-auto sm:mx-0"></div>
               </button>
-              </a>
+            </a>
             </div>
           ))}
         </div>
