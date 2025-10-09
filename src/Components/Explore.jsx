@@ -1,11 +1,15 @@
 import React from "react";
 
 export default function Explore() {
+
+   
+
+
   return (
     <>
-      <div className="max-w-7xl mx-auto flex flex-col gap-6 px-4">
+      <div className="max-w-7xl mx-auto poppins-regular flex flex-col gap-6 px-4">
         {/* 🔹 Heading */}
-        <h2 className="text-center w-full text-xl sm:text-2xl lg:text-[33px] font-semibold font-serif pt-10 sm:pt-6 text-[#007BFF]">
+        <h2 className="text-center  w-full text-xl sm:text-2xl lg:text-[33px] font-semibold font-serif pt-10 sm:pt-6 text-[#007BFF]">
           Explore The DafterSpace CoWorking Space
         </h2>
 
@@ -44,7 +48,7 @@ export default function Explore() {
               href="/about"
               className="mt-4 self-start bg-[#007BFF] text-white px-6 py-2 rounded-lg shadow-md text-sm sm:text-base font-medium hover:bg-[#005FCC] hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              About CalmKaaj →
+              About DafterSpace →
             </a>
           </div>
 
@@ -53,7 +57,7 @@ export default function Explore() {
             {/* Large Image */}
             <div className="h-[300px] sm:h-[450px] overflow-hidden rounded-lg">
               <img
-                src="Explore1.jpeg"
+                src="Explore1.jpg"
                 alt="Workspace"
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -63,14 +67,14 @@ export default function Explore() {
             <div className="flex flex-col gap-6">
               <div className="h-[150px] sm:h-[210px] overflow-hidden rounded-lg">
                 <img
-                  src="Explore2.jpg"
+                  src="Exploree2.jpg"
                   alt="Workspace 2"
-                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
+                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-500 "
                 />
               </div>
               <div className="h-[150px] sm:h-[210px] overflow-hidden rounded-lg">
                 <img
-                  src="Explore3.jpg"
+                  src="Exploree3.jpg"
                   alt="Workspace 3"
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -88,7 +92,7 @@ export default function Explore() {
           </p>
           <div className="max-w-4xl my-4 sm:my-6 text-base sm:text-lg font-serif text-gray-700 leading-relaxed">
             <p>
-              CalmKaaj offers more than just a workspace. It’s a place to boost
+              DafterSpace offers more than just a workspace. It’s a place to boost
               focus, enhance productivity, and ignite creativity. With modern,
               inspiring work environments and a vibrant community, it’s where
               big ideas come to life.

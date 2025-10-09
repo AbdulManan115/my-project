@@ -8,13 +8,13 @@ export default function Cards() {
       Description: "Furnished, move-in ready offices with shared amenities.",
     },
     {
-      img: "Card2.jpg",
+      img: "fdesk.jpg",
       Heading: "Flexible Desk",
       Description:
         "Available on daily, weekly and monthly rates with shared amenities.",
     },
     {
-      img: "Card3.jpeg",
+      img: "ddesk.jpg",
       Heading: "Dedicated Desk",
       Description: "Personal desk in a shared space with shared amenities.",
     },
