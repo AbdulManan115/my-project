@@ -5,13 +5,13 @@ export default function Hero() {
     <div className="relative rounded-br-[40px] sm:rounded-br-[60px] lg:rounded-br-[150px] overflow-hidden">
       {/* 🔹 Background Image */}
       <img
-        src="dsh1.jpg"
+        src="hero2.jpg"
         alt="hero"
         className="h-[70vh] sm:h-[85vh] lg:h-screen w-full object-cover"
       />
 
       {/* 🔹 Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-blue-900/40"></div>
 
       {/* 🔹 Text Section */}
       <div className="absolute top-12 sm:top-20 lg:top-1/2 left-5 sm:left-10 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-10 text-left lg:text-center px-2 sm:px-0">
