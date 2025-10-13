@@ -72,8 +72,8 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-left md:text-center text-xs sm:text-sm text-[#1E3A8A] border-t border-[#1E3A8A]/30 bg-white py-3 sm:py-4 px-4">
-        © {new Date().getFullYear()} CalmKaaj. All Rights Reserved. Design by{" "}
-        <span className="font-semibold text-[#1E3A8A]">Bit Technologies</span>
+        © {new Date().getFullYear()} DafterSpace. All Rights Reserved. Design by{" "}
+        <span className="font-semibold text-[#1E3A8A]">Red Dev.</span>
       </div>
     </>
   );

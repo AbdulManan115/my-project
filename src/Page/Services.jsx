@@ -5,23 +5,23 @@ import Footer from "../Components/Footer";
 export default function Services() {
   const carddata = [
     {
-      img: "Card1.jpg",
+      img: "desk.jpg",
       Heading: "Private Office",
       Description: "Furnished, move-in ready offices with shared amenities.",
     },
     {
-      img: "Card2.jpg",
+      img: "fdesk.jpg",
       Heading: "Flexible Desk",
       Description:
         "Available on daily, weekly and monthly rates with shared amenities.",
     },
     {
-      img: "Card3.jpeg",
+      img: "ddesk.jpg",
       Heading: "Dedicated Desk",
       Description: "Personal desk in a shared space with shared amenities.",
     },
     {
-      img: "Card4.jpg",
+      img: "edesk.jpg",
       Heading: "Events",
       Description:
         "Well-equipped space for your next event, exhibition or performance.",
@@ -32,7 +32,7 @@ export default function Services() {
       Description: "Use CK address for your business. Mail handling service.",
     },
     {
-      img: "Card.jpeg",
+      img: "vdesk.jpg",
       Heading: "Team Workspace",
       Description:
         "Shared space for small teams to collaborate and work efficiently.",
@@ -62,9 +62,9 @@ export default function Services() {
             services in Islamabad, including private offices, dedicated desks,
             virtual offices, flexible co-working spaces, and conference rooms.
             Whether you're a freelancer, startup, or growing business, our fully
-            equipped workspaces in Blue Area and I-10 are designed to boost
+            equipped workspaces in Barakhu Islamabad are designed to boost
             productivity, creativity, and comfort. With flexible booking options
-            and modern amenities, CalmKaaj is your go-to destination for
+            and modern amenities, DafterSpace is your go-to destination for
             reliable coworking and office solutions in Islamabad.
           </p>
           <div className="max-w-[200px] sm:max-w-[250px] bg-[#FDDC1F] h-[3px] mt-3 mx-auto md:mx-0"></div>

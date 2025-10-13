@@ -3,7 +3,7 @@ import React from "react";
 export default function Cards() {
   const carddata = [
     {
-      img: "Card1.jpg",
+      img: "desk.jpg",
       Heading: "Private Office",
       Description: "Furnished, move-in ready offices with shared amenities.",
     },
@@ -19,7 +19,7 @@ export default function Cards() {
       Description: "Personal desk in a shared space with shared amenities.",
     },
     {
-      img: "Card4.jpg",
+      img: "edesk.jpg",
       Heading: "Events",
       Description:
         "Well-equipped space for your next event, exhibition or performance.",
@@ -30,7 +30,7 @@ export default function Cards() {
       Description: "Use CK address for your business. Mail handling service.",
     },
     {
-      img: "Card.jpeg",
+      img: "vdesk.jpg",
       Heading: "Team Workspace",
       Description:
         "Shared space for small teams to collaborate and work efficiently.",

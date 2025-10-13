@@ -30,26 +30,26 @@ export default function Location() {
 
   const carddata = [
     {
-      img: "Card1.jpg",
+      img: "desk.jpg",
       Heading: "Private Office",
       Description: "Furnished, move-in ready offices with shared amenities.",
       price: "Rs.40,000 / seat / month (exclusive of tax)",
     },
     {
-      img: "Card2.jpg",
+      img: "fdesk.jpg",
       Heading: "Flexible Desk",
       Description:
         "Available on daily, weekly and monthly rates with shared amenities.",
       price: "Rs.23,000 / seat / month (exclusive of tax)",
     },
     {
-      img: "Card3.jpeg",
+      img: "ddesk.jpg",
       Heading: "Dedicated Desk",
       Description: "Personal desk in a shared space with shared amenities.",
       price: "Rs.28,000 / seat / month (exclusive of tax)",
     },
     {
-      img: "Card4.jpg",
+      img: "edesk.jpg",
       Heading: "Events",
       Description:
         "Well-equipped space for your next event, exhibition or performance.",
@@ -62,7 +62,7 @@ export default function Location() {
       price: "Rs.5500 / month (exclusive of tax)",
     },
     {
-      img: "Card.jpeg",
+      img: "vdesk.jpg",
       Heading: "Team Workspace",
       Description:
         "Shared space for small teams to collaborate and work efficiently.",

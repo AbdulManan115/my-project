@@ -27,11 +27,11 @@ export default function Contact() {
 
               {/* 🔸 Left Side */}
               <div>
-                <p className="text-[#004AAD] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-left">
-                  Get in Touch with CalmKaaj
+                <p className="text-[#004AAD] text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif leading-tight text-left">
+                  Get in Touch with DafterSpace
                 </p>
                 <p className="py-4 sm:py-5 text-base sm:text-lg text-gray-700 font-sans text-left">
-                  Get in touch with CalmKaaj today and start your new office experience.
+                  Get in touch with DafterSpace today and start your new office experience.
                 </p>
 
                 {/* Contact Info */}
@@ -42,23 +42,23 @@ export default function Contact() {
                   <ul className="space-y-3 text-gray-800 text-sm sm:text-base md:text-lg font-sans">
                     <li className="flex items-center gap-3">
                       <Mail size={18} className="text-[#004AAD]" />
-                      <a href="mailto:hello@calmkaaj.com" className="hover:text-[#FDDC1F] transition">
+                      <a href="mailto:hello@calmkaaj.com" className=" transition">
                         hello@calmkaaj.com
                       </a>
                     </li>
                     <li className="flex items-center gap-3">
                       <Phone size={18} className="text-[#004AAD]" />
                       <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
-                        <a href="tel:+923136224778" className="hover:text-[#FDDC1F] transition">+92 313 6224778</a>
+                        <a href="tel:+923136224778" className=" transition">+92 313 6224778</a>
                         <span className="hidden sm:inline text-[#004AAD]">|</span>
-                        <a href="tel:+923231557988" className="hover:text-[#FDDC1F] transition">+92 323 1557988</a>
+                        <a href="tel:+923231557988" className=" transition">+92 323 1557988</a>
                       </div>
                     </li>
-                    <a href="/location" className="flex cursor-pointer items-center gap-3 hover:text-[#FDDC1F] transition">
+                    <a href="/location" className="flex cursor-pointer items-center gap-3  transition">
                       <MapPin size={18} className="text-[#004AAD]" />
                       <span>Barakahu Islamabad</span>
                     </a>
-                    <a href="/location" className="flex items-start gap-3 cursor-pointer hover:text-[#FDDC1F] transition text-sm md:text-base">
+                    <a href="/location" className="flex items-start gap-3 cursor-pointer  transition text-sm md:text-base">
                       <MapPin size={18} className="text-[#004AAD] mt-1" />
                       <span>Kalsoom Plaza, 1st Floor, Murree Road, Barakhu, Islamabad</span>
                     </a>
@@ -146,7 +146,7 @@ export default function Contact() {
                 <div className="flex text-[#004AAD] font-sans text-xs sm:text-sm md:text-base items-start gap-2 leading-snug mt-4">
                   <input type="checkbox" className="mt-1 accent-[#FDDC1F]" />
                   <span>
-                    I understand that CalmKaaj may keep my provided details in order to respond to my enquiry.
+                    I understand that DafterSpace may keep my provided details in order to respond to my enquiry.
                   </span>
                 </div>
 

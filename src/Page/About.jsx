@@ -33,7 +33,7 @@ export default function About() {
       {/* Text section */}
       <div className="py-10 px-4 md:px-0">
         <p className="max-w-7xl mx-auto font-serif text-[16px] md:text-[18px] my-5 leading-relaxed">
-          <span className="text-[#1E3A8A] font-semibold">CalmKaaj</span> aims to unite loosely
+          <span className="text-[#1E3A8A] font-semibold">DafterSpace</span> aims to unite loosely
           connected individuals into a thriving community of members, fostering
           their individual success while simultaneously enriching the collective
           ecosystem. Our coworking facilities are designed to provide
@@ -47,7 +47,7 @@ export default function About() {
           Our growth is driven by our community members. As professionals, our
           members need a cost-effective, efficient and comfortable workspace
           with associated services. As people, they desire community — one which
-          radiates positivity and captures the magic of collaboration. CalmKaaj
+          radiates positivity and captures the magic of collaboration. DafterSpace
           brings that by design! Our founders’ international experience as
           leaders and change-makers have shaped CK such that we provide an
           unmatched level of care and bespoke offerings for our members, further
@@ -55,7 +55,7 @@ export default function About() {
         </p>
 
         <p className="max-w-7xl mx-auto font-serif text-[16px] md:text-[18px] my-5 leading-relaxed">
-          CalmKaaj carries a quintessentially Pakistani identity. We draw
+          DafterSpace carries a quintessentially Pakistani identity. We draw
           inspiration from our leaders, thinkers, artistes and philanthropists.
           Our facilities and services are designed for our community’s local
           needs and we offer warm, friendly spaces for thought leadership,

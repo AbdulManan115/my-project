@@ -6,7 +6,7 @@ import Explore from '../Components/Explore'
 import Facilites from '../Components/Facilites'
 
 import Testimonials from '../Components/Testimonial'
-import Imageslide from '../Components/Imageslide'
+
 import Booking from '../Components/Booking'
 import Footer from '../Components/Footer'
 import Ourservice from '../Components/Ourservice'
@@ -22,7 +22,7 @@ export default function App() {
        <Ourservice/>
        
        {/* <Testimonials/> */}
-       <Imageslide/>
+       {/* <Imageslide/> */}
        <Booking/>
        <Footer/>
     </div>
