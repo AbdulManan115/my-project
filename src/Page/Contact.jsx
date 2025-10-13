@@ -2,9 +2,9 @@ import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { Mail, ChevronDown, MapPin, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
-  const [openLocation, setOpenLocation] = useState(false);
   const [openWorkspace, setOpenWorkspace] = useState(false);
 
   return (
@@ -31,7 +31,7 @@ export default function Contact() {
                   Get in Touch with DafterSpace
                 </p>
                 <p className="py-4 sm:py-5 text-base sm:text-lg text-gray-700 font-sans text-left">
-                  Get in touch with DafterSpace today and start your new office experience.
+                  Tell us what you need, and we’ll help you find the right workspace.
                 </p>
 
                 {/* Contact Info */}
@@ -43,7 +43,7 @@ export default function Contact() {
                     <li className="flex items-center gap-3">
                       <Mail size={18} className="text-[#004AAD]" />
                       <a href="mailto:hello@calmkaaj.com" className=" transition">
-                        hello@calmkaaj.com
+                        hello@DafterSpace.com
                       </a>
                     </li>
                     <li className="flex items-center gap-3">
@@ -70,29 +70,10 @@ export default function Contact() {
               <div>
                 <div className="grid grid-cols-1 gap-4 sm:gap-5 mt-6">
                   
-                  {/* Location Dropdown */}
-                  <div className="border-2 border-[#004AAD] rounded-lg p-3 sm:p-4 relative bg-white">
-                    <div
-                      className="flex justify-between items-center cursor-pointer select-none"
-                      onClick={() => setOpenLocation(!openLocation)}
-                    >
-                      <p className="text-[#004AAD] text-sm sm:text-base font-semibold">Choose Location</p>
-                      <ChevronDown className="text-[#004AAD] w-5 h-5" />
-                    </div>
-                    {openLocation && (
-                      <ul className="absolute left-0 top-full mt-2 w-full max-h-60 overflow-auto bg-[#004AAD] text-white rounded-lg z-10 text-sm sm:text-base">
-                        {["DafterSpace : Barakhu Islamabad"].map((loc) => (
-                          <a
-                            href="/location"
-                            key={loc}
-                            className="px-4 py-3 hover:bg-[#FDDC1F] hover:text-[#004AAD] rounded-lg block transition"
-                          >
-                            {loc}
-                          </a>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                  {/* Location tile links to Location page */}
+                  <Link to="/location" aria-label="Go to Location" className="border-2 border-[#004AAD] rounded-lg p-3 sm:p-4 bg-white block hover:bg-[#FDDC1F]/20 transition">
+                    <p className="text-[#004AAD] text-sm sm:text-base font-semibold">Location</p>
+                  </Link>
 
                   {/* Workspace Dropdown */}
                   <div className="border-2 border-[#004AAD] rounded-lg p-3 sm:p-4 relative bg-white">

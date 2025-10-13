@@ -93,15 +93,12 @@ export default function Location() {
       <div className="max-w-7xl mx-auto my-10 px-3 sm:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 items-center">
           <div>
-            <p className="text-4xl font-serif text-[#1E3A8A]">
+            <p className="text-4xl font-popins text-[#1E3A8A]">
               Find Your Perfect Coworking Space at DafterSpace
             </p>
-            <p className="text-lg py-4 font-sans leading-relaxed text-gray-800">
-              Whether you're a solo entrepreneur embarking on a new journey or
-              part of a growing team looking for the perfect space, DafterSpace
-              offers the ideal environment for your needs. With flexible office
-              solutions designed to inspire productivity and creativity, you'll
-              find a spot that truly feels like your own.
+            <p className="text-lg py-4  leading-relaxed text-gray-800">
+              From solo founders to growing teams, DafterSpace offers flexible,
+              thoughtfully designed workspaces that help you do your best work.
             </p>
             <a href="/contact">
               <button className="mt-5 sm:mt-6 lg:mt-3 py-2 sm:py-2.5 lg:py-2 px-5 sm:px-7 lg:px-10 bg-[#1E3A8A] hover:bg-[#D4AF37] transition-all duration-300 text-white rounded-lg font-semibold cursor-pointer text-sm sm:text-base lg:text-[18px] w-full sm:w-auto">
@@ -146,7 +143,7 @@ export default function Location() {
                 alt={items.Heading}
                 className="w-full h-44 sm:h-55 object-cover"
               />
-              <p className="text-lg sm:text-xl px-4 sm:px-5 py-3 sm:py-4 font-serif text-[#1E3A8A]">
+              <p className="text-lg sm:text-xl px-4 sm:px-5 py-3 sm:py-4 font-poppins text-[#1E3A8A]">
                 {items.Heading}
               </p>
               <p className="text-sm sm:text-base px-4 sm:px-5 font-serif text-gray-700 leading-relaxed">

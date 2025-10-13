@@ -1,108 +1,111 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showLocations, setShowLocations] = useState(false);
-  const [showMobileLocations, setShowMobileLocations] = useState(false);
+  
 
   return (
-    <nav className="w-full shadow-md bg-white">
+  <nav className="w-full shadow-md bg-white" role="navigation" aria-label="Primary">
       {/* 🔍 Mobile Top Search Bar */}
       <div className="border-b p-3 flex justify-center bg-white lg:hidden">
-        <div className="flex border-2 rounded-md w-full max-w-md overflow-hidden">
-          <input
-            type="text"
-            placeholder="Type here..."
-            className="w-full py-2 px-3 text-sm focus:outline-none"
-          />
-          <button className="bg-[#007BFF]  text-white px-5 py-2 text-sm font-medium hover:bg-[#C4A300] transition">
-            Search
-          </button>
-        </div>
+        <Link
+          to="/contact"
+          className="bg-[#007BFF] text-white px-5 py-2 text-sm font-medium hover:bg-[#C4A300] transition rounded-md"
+          aria-label="Book a tour"
+        >
+          Book a Tour
+        </Link>
       </div>
 
       {/* 🖥️ Desktop Navbar */}
       <div className="flex justify-between items-center px-4 lg:px-10 py-4 w-full">
         {/* Left → Logo */}
         <div>
-          <img src="logo.jpg" alt="Logo" className="w-auto h-10 lg:h-18" />
+          <Link to="/" aria-label="Go to home">
+            <img src="logo.jpg" alt="DafterSpace logo" className="w-auto h-10 lg:h-18" loading="lazy" />
+          </Link>
         </div>
 
         {/* Center → Menu */}
-        <ul className="hidden lg:flex gap-6 lg:gap-10 items-center flex-grow justify-center">
-          <a
-            href="/"
-            className="font-semibold text-base lg:text-lg text-[#007BFF] hover:text-[#005FCC] cursor-pointer"
-          >
-            Home
-          </a>
-          <a
-            href="/about"
-            className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
-          >
-            About Us
-          </a>
-          <a
-            href="/services"
-            className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
-          >
-            Our Services
-          </a>
-
-          {/* Dropdown (Desktop) */}
-          <li
-            className="relative font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer z-70"
-            onMouseEnter={() => setShowLocations(true)}
-            onMouseLeave={() => setShowLocations(false)}
-          >
-            Location ▾
-            <ul
-              className={`absolute top-0 left-0 mt-2 rounded-md shadow-md ${
-                showLocations ? "block" : "hidden"
-              }`}
+        <ul className="hidden lg:flex gap-6 lg:gap-10 items-center flex-grow justify-center" role="menubar">
+          <li role="none">
+            <Link
+              to="/"
+              className="font-semibold text-base lg:text-lg text-[#007BFF] hover:text-[#005FCC] cursor-pointer"
+              role="menuitem"
             >
-              <div className="overflow-hidden mt-7">
-                <a
-                  href="/location"
-                  className="bg-[#007BFF] text-white hover:bg-[#005FCC] cursor-pointer px-4 py-4 whitespace-nowrap transition"
-                >
-                  Barakahu Islamabad
-                </a>
-              </div>
-            </ul>
+              Home
+            </Link>
+          </li>
+          <li role="none">
+            <Link
+              to="/about"
+              className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
+              role="menuitem"
+            >
+              About Us
+            </Link>
+          </li>
+          <li role="none">
+            <Link
+              to="/services"
+              className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
+              role="menuitem"
+            >
+              Our Services
+            </Link>
           </li>
 
-          <a
-            href="/blog"
-            className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
-          >
-            Blog
-          </a>
-          <a
-            href="/contact"
-            className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
-          >
-            Contact Us
-          </a>
+          <li role="none">
+            <Link
+              to="/location"
+              className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
+              role="menuitem"
+            >
+              Location
+            </Link>
+          </li>
+
+          <li role="none">
+            <Link
+              to="/blog"
+              className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
+              role="menuitem"
+            >
+              Blog
+            </Link>
+          </li>
+          <li role="none">
+            <Link
+              to="/contact"
+              className="font-medium text-base lg:text-lg text-gray-800 hover:text-[#007BFF] cursor-pointer"
+              role="menuitem"
+            >
+              Contact Us
+            </Link>
+          </li>
         </ul>
 
-        {/* Right → Desktop Search Bar */}
-        <div className="hidden lg:flex border-2 rounded-md overflow-hidden">
-          <input
-            type="text"
-            placeholder="Type Here"
-            className="text-center w-[160px] text-sm lg:text-base py-2 focus:outline-none"
-          />
-          <button className="bg-[#007BFF] text-white px-5 lg:px-6 py-2 lg:py-3 text-sm lg:text-base font-medium hover:bg-[#005FCC] transition">
-            Search
-          </button>
+        {/* Right → Desktop CTA */}
+        <div className="hidden lg:flex">
+          <Link
+            to="/contact"
+            className="btn-primary focus-ring px-5 lg:px-6 py-2 lg:py-3 text-sm lg:text-base"
+            aria-label="Book a tour"
+          >
+            Book a Tour
+          </Link>
         </div>
 
         {/* 📱 Hamburger (Mobile) */}
         <button
           className="lg:hidden text-2xl text-[#007BFF]"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           {menuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
@@ -110,58 +113,53 @@ export default function Navbar() {
 
       {/* 📱 Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-[#007BFF] border-t w-full transition-all">
+        <div id="mobile-menu" className="lg:hidden bg-[#007BFF] border-t w-full transition-all">
           <ul className="flex flex-col gap-2 p-4 w-full">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="font-semibold text-base text-white bg-[#005FCC] hover:bg-[#004C99] cursor-pointer px-3 py-2 rounded-md"
+              onClick={() => setMenuOpen(false)}
             >
               Home
-            </a>
+            </Link>
 
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="font-medium text-base text-white bg-[#007BFF] hover:bg-[#005FCC] cursor-pointer px-3 py-2 rounded-md"
+              onClick={() => setMenuOpen(false)}
             >
               About Us
-            </a>
-            <a
-              href="/services"
+            </Link>
+            <Link
+              to="/services"
               className="font-medium text-base text-white bg-[#007BFF] hover:bg-[#005FCC] cursor-pointer px-3 py-2 rounded-md"
+              onClick={() => setMenuOpen(false)}
             >
               Our Services
-            </a>
+            </Link>
 
-            {/* Mobile Dropdown */}
-            <li
+            <Link
+              to="/location"
               className="font-medium text-base text-white bg-[#007BFF] hover:bg-[#005FCC] cursor-pointer px-3 py-2 rounded-md"
-              onClick={() => setShowMobileLocations(!showMobileLocations)}
+              onClick={() => setMenuOpen(false)}
             >
-              Locations ▾
-              {showMobileLocations && (
-                <ul className="mt-2 flex flex-col">
-                  <a
-                    href="/location"
-                    className="text-white bg-[#007BFF] hover:bg-[#005FCC] cursor-pointer px-3 py-4 rounded-md"
-                  >
-                    Barakahu Islamabad
-                  </a>
-                </ul>
-              )}
-            </li>
+              Location
+            </Link>
 
-            <a
-              href="/blog"
+            <Link
+              to="/blog"
               className="font-medium text-base text-white bg-[#007BFF] hover:bg-[#005FCC] cursor-pointer px-3 py-2 rounded-md"
+              onClick={() => setMenuOpen(false)}
             >
               Blog
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="font-medium text-base text-white bg-[#007BFF] hover:bg-[#005FCC] cursor-pointer px-3 py-2 rounded-md"
+              onClick={() => setMenuOpen(false)}
             >
               Contact Us
-            </a>
+            </Link>
           </ul>
         </div>
       )}

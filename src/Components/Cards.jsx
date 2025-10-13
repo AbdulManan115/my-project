@@ -44,7 +44,7 @@ export default function Cards() {
         {carddata.map((items, index) => (
           <div
             key={index}
-            className="bg-white shadow-2xl rounded-br-3xl overflow-hidden hover:shadow-blue-200 transition-shadow duration-300"
+            className={`bg-white shadow-2xl rounded-lg overflow-hidden hover:shadow-blue-200 transition-shadow duration-300 animate-fadeInUp ${index % 3 === 1 ? 'delay-100' : index % 3 === 2 ? 'delay-200' : ''}`}
           >
             <div>
               <img
@@ -59,7 +59,7 @@ export default function Cards() {
               </p>
             </div>
             <div>
-              <p className="text-lg px-5 font-serif text-gray-700 line-clamp-2">
+              <p className="text-base sm:text-lg px-5 font-sans text-gray-700 line-clamp-2">
                 {items.Description}
               </p>
             </div>
