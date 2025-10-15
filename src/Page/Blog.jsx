@@ -14,7 +14,7 @@ export default function Blog() {
 
         {/* Background Image */}
         <img
-          src="about1.jpg"
+          src="hero2.jpg"
           className="w-full object-cover h-60 md:h-80 lg:h-[300px]"
         />
 

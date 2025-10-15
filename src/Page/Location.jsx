@@ -78,7 +78,7 @@ export default function Location() {
       <div className="relative w-full">
         <div className="absolute inset-0 bg-[#1E3A8A]/60 z-0"></div>
         <img
-          src="about1.jpg"
+          src="hero2.jpg"
           className="w-full object-cover h-60 md:h-80 lg:h-[300px]"
         />
         <div className="absolute top-[30%] left-0 right-0 px-4 z-10 text-center md:text-left max-w-7xl mx-auto">
