@@ -47,6 +47,7 @@ export default function Cards() {
         className="scroll-animate scroll-slideUp group bg-white shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-[#FDDC1F] transform hover:scale-105 hover:-translate-y-2"
         style={{ animationDelay: `${(index % 3) * 100}ms` }}
       >
+        
         <div className="overflow-hidden">
           <img
             src={item.img}
@@ -76,7 +77,18 @@ export default function Cards() {
   };
 
   return (
-    <div className="mt-10 lg:translate-y-[-85px] relative z-70 px-4">
+    <div className="mt-10 z-70 px-4">
+      {/* Service Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#1E3A8A] mb-4">
+          Our Services
+        </h2>
+        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        We provide modern and comfortable workspaces tailored to your way of working. 
+
+        </p>
+      </div>
+      
       {/* ✅ Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl lg:max-w-6xl mx-auto gap-6">
         {carddata.map((items, index) => (
